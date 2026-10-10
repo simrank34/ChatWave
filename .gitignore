@@ -1,0 +1,12 @@
+node_modules/
+**/node_modules/
+.env
+.env.*
+!.env.example
+.expo/
+dist/
+web-build/
+coverage/
+.DS_Store
+npm-debug.log*
+chatwave-temp/
