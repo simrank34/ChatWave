@@ -1,5 +1,5 @@
 
-const API_URL = "http://10.252.176.119:5000";
+const API_URL = "https://chatwave-backend-f6s6.onrender.com";  
 
 export const getMessages = async () => {
   const response = await fetch(`${API_URL}/api/messages`);

@@ -1,42 +1,30 @@
 {
-  "expo": {
-    "name": "chatwave-temp",
-    "slug": "chatwave-temp",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "chatwavetemp",
-    "userInterfaceStyle": "automatic",
-    "ios": {
-      "icon": "./assets/expo.icon"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
-    },
-    "web": {
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "backgroundColor": "#208AEF",
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
-        }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
-    }
-  }
+"expo": {
+"name": "ChatWave",
+"slug": "chatwave-temp",
+"version": "1.0.0",
+"orientation": "portrait",
+"scheme": "chatwave",
+"userInterfaceStyle": "automatic",
+"android": {
+"predictiveBackGestureEnabled": false,
+"package": "com.mandavesimran.chatwavetemp"
+},
+"web": {
+"output": "static"
+},
+"plugins": [
+  "expo-router"
+],
+"experiments": {
+"typedRoutes": true,
+"reactCompiler": true
+},
+"extra": {
+"router": {},
+"eas": {
+"projectId": "ba935cbd-94ba-4789-9e5d-3a95bfbcf8a4"
+}
+}
+}
 }

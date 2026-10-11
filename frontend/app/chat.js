@@ -100,7 +100,7 @@ export default function Chat() {
           </Text>
 
           <Text style={styles.online}>
-            ● Online
+            Online
           </Text>
         </View>
 
@@ -129,13 +129,25 @@ export default function Chat() {
 
       <View style={styles.inputContainer}>
 
-        <TextInput
-          style={styles.input}
-          placeholder="Type a message..."
-          value={text}
-          onChangeText={handleTyping}
-          onSubmitEditing={sendMessage}
-        />
+<TextInput
+  style={styles.input}
+  placeholder="Type a message..."
+  placeholderTextColor="#64748B"
+  value={text}
+  onChangeText={handleTyping}
+  editable={true}
+  multiline={false}
+  autoCorrect={false}
+  returnKeyType="send"
+  blurOnSubmit ={false}
+  onSubmitEditing={sendMessage}
+  onFocus={() => {
+  console.log("MESSAGE INPUT FOCUSED");
+  setText("TEST");
+}}
+/>
+
+
 
         <TouchableOpacity
           style={styles.sendButton}
@@ -201,13 +213,19 @@ const styles = StyleSheet.create({
     borderTopColor: "#ddd"
   },
 
-  input: {
-    flex: 1,
-    backgroundColor: "#F1F5F9",
-    borderRadius: 20,
-    paddingHorizontal: 15,
-    paddingVertical: 10
-  },
+input: {
+  flex: 1,
+  minHeight: 44,
+  color: "#0F172A",
+  backgroundColor: "#F1F5F9",
+  borderRadius: 20,
+  paddingHorizontal: 15,
+  paddingVertical: 10,
+  fontSize: 16,
+  textAlignVertical: "center"
+},
+
+
 
   sendButton: {
     marginLeft: 8,
